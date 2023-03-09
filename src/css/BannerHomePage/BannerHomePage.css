@@ -1,0 +1,13 @@
+.banner-homepage-area{
+    background: url("./../../../public/images/BannerHomeCPO.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+    height:100vh;
+  }
+
+  @media (max-width: 480px) {
+    .banner-homepage-area {
+      background-position: 0 50px;
+    }
+  }

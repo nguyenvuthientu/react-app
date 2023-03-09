@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App/App.css';
+import BannerHomePage from "./Components/BannerHomPage";
+import MenuHomePage from "./Components/MenuHomPage";
+import RightMenuHomePage from "./Components/RightMenuHomePage";
+import RightMenuHomePageMobile from "./Components/RightMenuHomePageMobile";
+import MainNavMobile from './Components/MainNavMobile';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <BannerHomePage>
+                <MenuHomePage>
+                    <RightMenuHomePage/>
+                    <RightMenuHomePageMobile/>
+                </MenuHomePage>
+                <MainNavMobile/>
+            </BannerHomePage>
+        </div>
+    );
 }
 
 export default App;

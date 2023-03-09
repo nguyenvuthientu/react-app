@@ -1,0 +1,37 @@
+.right-menu-home-page-mobile{
+    display: none;
+}
+
+.right-menu-home-page-mobile .phone-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.right-menu-home-page-mobile .phone-contact .icon{
+    background: #ff671f;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.right-menu-home-page-mobile .phone-contact .icon i{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right-menu-home-page-mobile .phone-contact a{
+    color: #000;
+}
+
+@media (max-width: 480px) {
+    .right-menu-home-page-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+  }
