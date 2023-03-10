@@ -6,8 +6,7 @@ class MenuHomePage extends Component {
     render() {
         return (
             <div className='menu-homepage'>
-                {/* <img src={logo} className="logo"></img> */}
-                <div>ABC</div>
+                <img src={logo} className="logo"></img>
                 {this.props.children}
             </div>
         )
