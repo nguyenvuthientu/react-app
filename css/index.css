@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    height:100%;
+  }
+  body{
+    font-family: 'opensans-regular';
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
