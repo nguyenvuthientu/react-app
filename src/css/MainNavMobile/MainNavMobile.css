@@ -11,6 +11,10 @@ a{
     display: block !important;
     background: black;
     padding: 10px;
+    position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
 }
 
 .main-nav-mobile-signin{

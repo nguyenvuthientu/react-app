@@ -1,3 +1,7 @@
+.MyService{
+    margin-top: 20px;
+}
+
 .MyService h2{
     text-align: center;
     font-family: "Roboto","HelveticaNeue","Helvetica Neue",sans-serif;
@@ -53,6 +57,7 @@
 @media (max-width: 480px) {
     .MyService{
         padding: 0 10px;
+        margin-top: -30px;
     }
 
     .MyService .services .box-service{

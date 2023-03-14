@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 480px) {
+    .WelcomeText{
+        padding: 44px 0;
+    }
     .WelcomeText h2{
         font-size: 12px;
         line-height: 20px;
