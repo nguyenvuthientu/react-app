@@ -1,0 +1,18 @@
+.WelcomeText{
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.WelcomeText h2{
+    font-size: 28px;
+    line-height: 44px;
+    color: white;
+    font-weight: 500 !important;
+}
+
+@media (max-width: 480px) {
+    .WelcomeText h2{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

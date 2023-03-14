@@ -1,0 +1,13 @@
+hr{
+    border: none;
+    height: 0.1px;
+    background: #3c4a62;
+    margin: 0 auto;
+    width: 98%;
+}
+
+@media (max-width: 480px) {
+    hr{
+        display: none;
+    }
+  }

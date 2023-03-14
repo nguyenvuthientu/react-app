@@ -4,6 +4,10 @@ import MenuHomePage from "./Components/MenuHomPage";
 import RightMenuHomePage from "./Components/RightMenuHomePage";
 import RightMenuHomePageMobile from "./Components/RightMenuHomePageMobile";
 import MainNavMobile from './Components/MainNavMobile';
+import Hr from './Components/Hr';
+import WelcomeText from './Components/WelcomeText';
+import MyService from './Components/MyServices';
+import TopNavMenuScroll from './Components/TopNavMenuScroll';
 
 function App() {
     return (
@@ -13,8 +17,12 @@ function App() {
                     <RightMenuHomePage/>
                     <RightMenuHomePageMobile/>
                 </MenuHomePage>
+                <TopNavMenuScroll />
                 <MainNavMobile/>
+                <Hr/>
+                <WelcomeText />
             </BannerHomePage>
+            <MyService />
         </div>
     );
 }

@@ -6,7 +6,7 @@ class RightMenuHomePage extends Component{
         return(
             <div className="right-menu-homepage">
                 <div className="right-menu-item">
-                    <i className="fa fa-phone fa-lg"></i> <a href='#'>1900-55-55-22</a>
+                    <i className="fa fa-phone fa-lg"></i> <a href='#'>1980-50-57-22</a>
                 </div>
                 <div className="right-menu-item">
                     <i className="fa fa-sign-in fa-lg"></i> <a href='#'>Đăng nhập</a>

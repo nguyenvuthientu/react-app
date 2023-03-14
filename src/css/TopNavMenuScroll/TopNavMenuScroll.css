@@ -1,0 +1,43 @@
+.banner-homepage-area .top-nav-menu-scroll{
+    display: none;
+}
+
+.banner-homepage-area .show{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #ec4c00;
+}
+
+.top-nav-menu-scroll .logo{
+    width: 100px;
+    height: auto;
+    margin: 5px 10px;
+} 
+
+.top-nav-menu-scroll .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav-menu-scroll .menu a{
+    color: white;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.top-nav-menu-scroll .menu a:hover{
+    background: white;
+    color: #ec4c00;
+    line-height: 44.36px;
+}
+
+@media (max-width: 480px) {
+    .banner-homepage-area .top-nav-menu-scroll{
+        display: none;
+    }
+  }

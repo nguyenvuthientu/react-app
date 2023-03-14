@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 .main-nav-mobile{
     display: none;
 }
@@ -27,7 +32,8 @@
 }
 
 .main-nav-mobile-menu{
-    list-style: none;
+    padding: 0;
+    list-style-type: none;
 }
 
 .main-nav-mobile-menu li{
@@ -40,6 +46,8 @@
     font-weight: 400;
 }
 
-@media (max-width: 480px) {
-
-  }
+@media only screen and (min-width: 768px) {
+    .main-nav-mobile{
+        display: none !important;
+    }
+}

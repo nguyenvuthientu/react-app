@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './../css/MenuHomePage/MenuHomePage.css';
-import logo from '../images/LogoHanwhaLifeWhite.png';
+import logo from '../images/Logo.png';
 
 class MenuHomePage extends Component {
     render() {
