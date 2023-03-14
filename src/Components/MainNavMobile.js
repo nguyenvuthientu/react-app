@@ -9,7 +9,7 @@ class MainNavMobile extends Component{
                     <i className='fa fa-sign-in fa-lg'></i> <a href='#'>Đăng nhập</a>
                 </div>
                 <ul className='main-nav-mobile-menu'>
-                    <li><a href=''>VỀ HANWHA LIFE</a></li>
+                    <li><a href=''>VỀ BOSCHARETE</a></li>
                     <li><a href=''>CHỨC NĂNG</a></li>
                     <li><a href=''>LIÊN HỆ</a></li>
                 </ul>
