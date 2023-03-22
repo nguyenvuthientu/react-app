@@ -14,19 +14,19 @@ class MyService extends Component{
                     <div className="box-service">
                         <img src={service1} />
                         <span>TRUY VẤN THÔNG TIN <br/>
-                            HỢP ĐỒNG</span>
+                            ĐIỆN TỬ</span>
                     </div>
                     <div className="box-service">
                         <img src={service2} />
-                        <span>YÊU CẦU TẠM ỨNG <br /> GIÁ TRỊ HOÀN LẠI</span>
+                        <span>YÊU CẦU THUÊ <br /> DỊCH VỤ WEB</span>
                     </div>
                     <div className="box-service">
                         <img src={service3} />
-                        <span>YÊU CẦU GIẢI QUYẾT <br/> QUYỀN LỢI <br /> DÀNH CHO BÊN MUA BẢO HIỂM</span>
+                        <span>YÊU CẦU GIẢI QUYẾT <br/> QUYỀN LỢI <br /> DÀNH CHO KHÁCH HÀNG</span>
                     </div>
                     <div className="box-service">
                         <img src={service3} />
-                        <span>YÊU CẦU GIẢI QUYẾT <br/> QUYỀN LỢI BẢO HIỂM <br/> 
+                        <span>YÊU CẦU GIẢI QUYẾT <br/> QUYỀN LỢI <br/> 
                             (DÀNH CHO KHÁCH HÀNG CHƯA CÓ TÀI KHOẢN)</span>
                     </div>
                     <div className="box-service">
