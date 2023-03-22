@@ -52,7 +52,7 @@
     animation: fadeOut 3s;
 } */
 
-.scroll-to-top:hover{
+.scroll-to-top:not(.scroll-to-top-hide):hover{
     cursor: pointer;
     background: black !important;
 }

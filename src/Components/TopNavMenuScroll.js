@@ -12,40 +12,8 @@ class TopNavMenuScroll extends Component{
         window.removeEventListener("scroll", this.onScroll, false);
     }
 
-    // hasReachedBottom() {
-    //     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    //         return true
-    //     }
-    //     return false;
-    // }
-
-    // checkScrollUp(){
-    //     let oldScrollY = window.scrollY;
-    //     console.log(oldScrollY)
-    //     if(oldScrollY < window.scrollY){
-    //         oldScrollY = window.scrollY;
-    //         return false
-    //     } else {
-    //         oldScrollY = window.scrollY;
-    //         return true
-    //     }
-        
-    // }
-
     handleScroll = (event) => {
-
-        //let isScrollUp = false;
-        //let lastScrollTop = 0;
         let scrollTop = window.pageYOffset;
-        // if(lastScrollTop < scrollTop){
-        //     isScrollUp = false;
-        // }
-        // else{
-        //     isScrollUp = true;
-        // }
-
-        //lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        
 
         if(scrollTop > 0){
             let classList = document.getElementById('top-nav-menu-scroll').classList;
