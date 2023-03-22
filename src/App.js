@@ -8,6 +8,7 @@ import Hr from './Components/Hr';
 import WelcomeText from './Components/WelcomeText';
 import MyService from './Components/MyServices';
 import TopNavMenuScroll from './Components/TopNavMenuScroll';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <WelcomeText />
             </BannerHomePage>
             <MyService />
+            <ScrollToTop />
         </div>
     );
 }
