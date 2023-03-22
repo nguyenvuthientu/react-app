@@ -22,11 +22,11 @@ class MyService extends Component{
                     </div>
                     <div className="box-service">
                         <img src={service3} />
-                        <span>YÊU CẦU GIẢI QUYẾT <br/> QUYỀN LỢI <br /> DÀNH CHO KHÁCH HÀNG</span>
+                        <span>YÊU CẦU GIẢI QUYẾT <br /> GIẢI PHÁP MOBILITY</span>
                     </div>
                     <div className="box-service">
                         <img src={service3} />
-                        <span>YÊU CẦU GIẢI QUYẾT <br/> QUYỀN LỢI <br/> 
+                        <span>CÔNG NGHIỆP VÀ THƯƠNG MẠI <br/>
                             (DÀNH CHO KHÁCH HÀNG CHƯA CÓ TÀI KHOẢN)</span>
                     </div>
                     <div className="box-service">
@@ -39,7 +39,7 @@ class MyService extends Component{
                     </div>
                     <div className="box-service">
                         <img src={service3} />
-                        <span>CÔNG CỤ HỖ TRỢ <br /> PHÂN BỐ TỶ LỆ ĐẦU TƯ</span>
+                        <span>SẢN PHẨM VÀ <br /> DỊCH VỤ KẾT NỐI</span>
                     </div>
                 </div>
             </div>
