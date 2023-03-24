@@ -12,13 +12,14 @@
 
 @media (max-width: 480px) {
     .menu-homepage{
-        display: flex;
+        /* display: flex;
         align-items: center;
         justify-content: space-between;
         background: white;
-        border-bottom: 1px solid #f39c12;
+        border-bottom: 1px solid #f39c12; */
+        display: none;
     }
-    .logo {
+    /* .logo {
       width: 90px;
-    }
+    } */
   }

@@ -10,11 +10,6 @@
       background-position: 0 50px;
       background-repeat:no-repeat;
       background-size:contain;
-      height:38vh;
-      position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
+      height:44vh;
     }
   }
