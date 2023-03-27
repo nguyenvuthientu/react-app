@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/react-app/static/css/main.ea9987d0.css",
-    "main.js": "/react-app/static/js/main.4c0488e0.js",
+    "main.css": "/react-app/static/css/main.1995970b.css",
+    "main.js": "/react-app/static/js/main.389e6d31.js",
     "static/js/787.ccf1ca15.chunk.js": "/react-app/static/js/787.ccf1ca15.chunk.js",
     "static/media/BannerHomeCPO.jpg": "/react-app/static/media/BannerHomeCPO.3acf8167f4792bc9dc53.jpg",
+    "static/media/Logo-Footer.png": "/react-app/static/media/Logo-Footer.e1025695147fca612730.png",
     "static/media/Logo.png": "/react-app/static/media/Logo.70dc146bc728c2d764b7.png",
     "static/media/IconCPO3.png": "/react-app/static/media/IconCPO3.599ede50e0d2b095a309.png",
     "static/media/IconCPO2.png": "/react-app/static/media/IconCPO2.4fb0f611ed4067bb1990.png",
     "static/media/IconCPO1.png": "/react-app/static/media/IconCPO1.13a7f9129ec1c59c5a3e.png",
     "index.html": "/react-app/index.html",
-    "main.ea9987d0.css.map": "/react-app/static/css/main.ea9987d0.css.map",
-    "main.4c0488e0.js.map": "/react-app/static/js/main.4c0488e0.js.map",
+    "main.1995970b.css.map": "/react-app/static/css/main.1995970b.css.map",
+    "main.389e6d31.js.map": "/react-app/static/js/main.389e6d31.js.map",
     "787.ccf1ca15.chunk.js.map": "/react-app/static/js/787.ccf1ca15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9987d0.css",
-    "static/js/main.4c0488e0.js"
+    "static/css/main.1995970b.css",
+    "static/js/main.389e6d31.js"
   ]
 }
