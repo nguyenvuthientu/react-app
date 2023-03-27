@@ -1,0 +1,102 @@
+.footer-mobile{
+    display: none;
+    background: #222222;
+    padding: 10px 10px 10px 10px;
+}
+
+.footer-mobile-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-mobile-top .item .item-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-mobile-top .item .item-head h3{
+    color: #ff671f;
+    font-size: 12px!important;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.footer-mobile-top .item .item-head .toggle-collapsed .fa-plus{
+    color: #ff671f;
+    font-size: 12px!important;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-weight: normal;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transform: rotate(135deg);
+}
+
+.footer-mobile-top .item .item-head .toggle-collapsed .collapsed{
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+}
+
+.footer-mobile-top .item .toggle-collapsed-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.footer-mobile-top .item .toggle-collapsed-content ul{
+    padding: 0;
+    list-style-type: none;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.footer-mobile-top .item .toggle-collapsed-content ul li a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.footer-mobile .footer-mobile-bottom .copy-right{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-mobile .footer-mobile-bottom .contact-icon{
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+
+.footer-mobile .footer-mobile-bottom .contact-icon a{
+    margin-right: 10px;
+    color: #fff;
+    font-size: 30px;
+    width: 50px;
+    padding: 6px 1px;
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    border-radius: 50%;
+    text-align: center;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-mobile{
+        display: block !important;
+    }
+  }
+

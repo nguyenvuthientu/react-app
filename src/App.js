@@ -9,23 +9,26 @@ import MyService from './Components/MyServices';
 import TopNavMenuScroll from './Components/TopNavMenuScroll';
 import ScrollToTop from './Components/ScrollToTop';
 import MenuHomePageMobile from './Components/MenuHomePageMobile';
+import Footer from './Components/Footer';
+import FooterMobile from './Components/FooterMobile';
 
 function App() {
     return (
         <div>
-             
             <BannerHomePage>
                 <MenuHomePage>
-                    <RightMenuHomePage/>                 
+                    <RightMenuHomePage />
                 </MenuHomePage>
                 <MenuHomePageMobile>
-                <RightMenuHomePageMobile />
-            </MenuHomePageMobile>   
+                    <RightMenuHomePageMobile />
+                </MenuHomePageMobile>
                 <TopNavMenuScroll />
-                <MainNavMobile/>
+                <MainNavMobile />
                 <WelcomeText />
-            </BannerHomePage>             
+            </BannerHomePage>
             <MyService />
+            <Footer />
+            <FooterMobile />
             <ScrollToTop />
         </div>
     );

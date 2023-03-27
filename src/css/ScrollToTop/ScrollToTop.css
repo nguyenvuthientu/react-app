@@ -4,10 +4,6 @@
     -webkit-box-shadow: 0 0 0 7px transparent;
     box-shadow: 0 0 0 7px transparent;
     color: #ffffff;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
     font-size: 20px;
     height: 40px;
     padding-top: 7px;
@@ -16,6 +12,10 @@
     text-align: center;
     width: 40px;
     z-index: 99;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
 }
 
 .scroll-to-top-show{
@@ -24,10 +24,6 @@
     -webkit-box-shadow: 0 0 0 7px transparent;
     box-shadow: 0 0 0 7px transparent;
     color: #ffffff;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
     font-size: 20px;
     height: 40px;
     padding-top: 7px;
@@ -36,48 +32,13 @@
     text-align: center;
     width: 40px;
     z-index: 99;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
 }
-
-/* .fade-in{
-    position: absolute;
-    right:0%;
-    background:#ec4c00;
-    padding: 10px;
-    animation: fadeIn 5s;
-}
-
-.fade-out{
-    padding: 10px;
-    background:#ec4c00;
-    animation: fadeOut 3s;
-} */
 
 .scroll-to-top:not(.scroll-to-top-hide):hover{
     cursor: pointer;
     background: black !important;
 }
-
-/* .scroll-to-top i{
-    font-size: 20px;
-    color: white;
-}
-
-@keyframes fadeIn {
-    from{
-        opacity: 0;
-    }
-  
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from{
-        opacity: 1;
-    }
-  
-    to{
-        opacity: 0;
-    }
-} */
