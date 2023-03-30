@@ -42,7 +42,7 @@ class App extends Component {
                             <RightMenuHomePageMobile />
                         </MenuHomePageMobile>
                         <TopNavMenuScroll />
-                        <MainNavMobile />
+                        <MainNavMobile OpenLoginForm={this.OpenLoginForm} />
                         <WelcomeText />
                     </BannerHomePage>
                     <MyService />
