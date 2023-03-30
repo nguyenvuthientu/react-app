@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import './css/App/App.css';
 import BannerHomePage from "./Components/BannerHomPage";
 import MenuHomePage from "./Components/MenuHomPage";
@@ -11,27 +12,51 @@ import ScrollToTop from './Components/ScrollToTop';
 import MenuHomePageMobile from './Components/MenuHomePageMobile';
 import Footer from './Components/Footer';
 import FooterMobile from './Components/FooterMobile';
+import Login from './Components/Login';
+import LoginForm from './Components/LoginForm';
 
-function App() {
-    return (
-        <div>
-            <BannerHomePage>
-                <MenuHomePage>
-                    <RightMenuHomePage />
-                </MenuHomePage>
-                <MenuHomePageMobile>
-                    <RightMenuHomePageMobile />
-                </MenuHomePageMobile>
-                <TopNavMenuScroll />
-                <MainNavMobile />
-                <WelcomeText />
-            </BannerHomePage>
-            <MyService />
-            <Footer />
-            <FooterMobile />
-            <ScrollToTop />
-        </div>
-    );
+class App extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            isDisplayLoginForm : false
+        };
+    }
+
+    OpenLoginForm = () => {
+        this.setState({
+            isDisplayLoginForm: true
+        });
+    }
+
+    render(){
+        if(!this.state.isDisplayLoginForm){
+            return (
+                <div>
+                    <BannerHomePage>
+                        <MenuHomePage>
+                            <RightMenuHomePage OpenLoginForm={this.OpenLoginForm} />
+                        </MenuHomePage>
+                        <MenuHomePageMobile>
+                            <RightMenuHomePageMobile />
+                        </MenuHomePageMobile>
+                        <TopNavMenuScroll />
+                        <MainNavMobile />
+                        <WelcomeText />
+                    </BannerHomePage>
+                    <MyService />
+                    <Footer />
+                    <FooterMobile />
+                    <ScrollToTop />
+                </div>
+            );
+        }
+        
+        return <Login>
+                    <LoginForm/>
+               </Login>
+    } 
 }
 
 export default App;
