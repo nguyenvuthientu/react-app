@@ -51,7 +51,6 @@ class App extends Component {
 
     OnSignOut = () => {
         let loggedInCache = localStorage.getItem('isLoggedIn');
-
         if(loggedInCache){
             localStorage.removeItem('isLoggedIn');
             this.setState({
