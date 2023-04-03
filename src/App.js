@@ -87,7 +87,8 @@ class App extends Component {
                         </MenuHomePageMobile>
                         <TopNavMenuScroll />
                         <MainNavMobile 
-                            OpenLoginForm={this.OpenLoginForm}                           
+                            OpenLoginForm={this.OpenLoginForm}
+                            OnSignOut={this.OnSignOut}                       
                         />
                         <WelcomeText />
                     </BannerHomePage>

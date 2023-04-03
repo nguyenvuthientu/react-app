@@ -7,6 +7,10 @@ class MainNavMobile extends Component{
         this.props.OpenLoginForm();
     }
 
+    OnSignOut = () => {
+        this.props.OnSignOut();
+    }
+
     render(){
         let loggedInObj = null;
         let loggedIn = false;
@@ -30,7 +34,7 @@ class MainNavMobile extends Component{
                                 <div className='main-nav-mobile-signin'>
                                     <i className='fa fa-user'></i> <a href='#'>Thay đổi mật khẩu</a>
                                 </div>
-                                <div className='main-nav-mobile-signin'>
+                                <div className='main-nav-mobile-signin' onClick={this.OnSignOut}>
                                     <a href='#'>Đăng xuất</a> <i className="fa fa-sign-out" aria-hidden="true"></i>
                                 </div>
                             </div>
