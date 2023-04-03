@@ -1,6 +1,7 @@
 .right-menu-homepage{
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .right-menu-item{
@@ -22,7 +23,15 @@
     font-size: 12px;
 }
 
-.right-menu-item:hover i{
+.right-menu-item:hover .fa-sign-in{
+    color: #fff;
+}
+
+.right-menu-item:hover .fa-user{
+    color: #fff;
+}
+
+.right-menu-item:hover .fa-phone{
     color: #fff;
 }
 
@@ -30,6 +39,48 @@
     color: #fff;
     line-height: 25px;
     font-size: 14px;
+}
+
+.fa-caret-down{
+    color: white !important;
+    margin-left: 5px;
+}
+
+.user-loggedIn-content{
+    display: none;
+    position: fixed;
+    top: 48px;
+    right: 18px;
+    background-color: #fff;
+    border: 2px solid #ff6a00;
+    padding: 5px 0px;
+    width: 200px;
+}
+
+.user-loggedIn-content ul{
+    padding: 5px 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.user-loggedIn-content ul li{
+    font-size: 16px;
+    color: #ff6a00;
+    font-weight: 500;
+    display: block;
+    line-height: 2;
+    padding: 0 18px;
+}
+
+.user-loggedIn-content ul li:hover{
+    cursor: pointer;
+    color: #ff6a00;
+    background-color: #F0F0F0;
+}
+
+.user-loggedIn-content ul li i:hover{
+    cursor: pointer;
+    color: #ff6a00 !important;
 }
 
 @media (max-width: 480px) {

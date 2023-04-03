@@ -20,29 +20,75 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            isDisplayLoginForm : false
+            isDisplayLoginForm : false,
+            isLoggedIn : false
         };
     }
 
     OpenLoginForm = () => {
-        this.setState({
-            isDisplayLoginForm: true
-        });
+        if(!this.state.isLoggedIn){
+            this.setState({
+                isDisplayLoginForm: true
+            });
+        } 
+    }
+
+    OnSubmitFormLogin = (data) => {
+        if(data){
+            if(data.username === 'tunvt' && data.password === '12345'){
+                this.setState({
+                    isLoggedIn : true,
+                    isDisplayLoginForm: false
+                });
+
+                localStorage.setItem('isLoggedIn',JSON.stringify({
+                    username: 'tunvt',
+                    isLoggedIn: true
+                }));
+            }
+        }
+    }
+
+    OnSignOut = () => {
+        let loggedInCache = localStorage.getItem('isLoggedIn');
+
+        if(loggedInCache){
+            localStorage.removeItem('isLoggedIn');
+            this.setState({
+                isLoggedIn: false
+            });
+        }
     }
 
     render(){
-        if(!this.state.isDisplayLoginForm){
+        let loggedInObj = null;
+        let loggedIn = false;
+        let loggedInCache = localStorage.getItem('isLoggedIn');
+
+        if(loggedInCache){
+            
+            loggedInObj = JSON.parse(loggedInCache);
+            loggedIn = loggedInObj.isLoggedIn;
+        }
+
+        if(!this.state.isDisplayLoginForm || loggedIn){
+            
             return (
                 <div>
                     <BannerHomePage>
                         <MenuHomePage>
-                            <RightMenuHomePage OpenLoginForm={this.OpenLoginForm} />
+                            <RightMenuHomePage 
+                                OpenLoginForm={this.OpenLoginForm} 
+                                OnSignOut={this.OnSignOut}
+                                />
                         </MenuHomePage>
                         <MenuHomePageMobile>
                             <RightMenuHomePageMobile />
                         </MenuHomePageMobile>
                         <TopNavMenuScroll />
-                        <MainNavMobile OpenLoginForm={this.OpenLoginForm} />
+                        <MainNavMobile 
+                            OpenLoginForm={this.OpenLoginForm}                           
+                        />
                         <WelcomeText />
                     </BannerHomePage>
                     <MyService />
@@ -54,7 +100,7 @@ class App extends Component {
         }
         
         return <Login>
-                    <LoginForm/>
+                    <LoginForm OnSubmitFormLogin={this.OnSubmitFormLogin}/>
                </Login>
     } 
 }

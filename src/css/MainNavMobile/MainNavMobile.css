@@ -50,6 +50,17 @@ a{
     font-weight: 400;
 }
 
+.main-nav-change-password{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.main-nav-mobile-signin .fa-sign-out{
+    margin-left: 3px;
+}
+
 @media only screen and (min-width: 768px) {
     .main-nav-mobile{
         display: none !important;
