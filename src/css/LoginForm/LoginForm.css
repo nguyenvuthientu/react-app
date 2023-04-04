@@ -241,3 +241,53 @@ input:focus::placeholder {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s; */
   }
+
+  .row-text-danger{
+    display: none;
+      /* display: flex;
+      align-items: center; */
+  }
+
+  .text-danger{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: 400;
+    color: #dc3545;
+  }
+
+  .validation-input-username{
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 127px;
+    border: 2px solid #dc3545;
+    background-color: #fff;
+  }
+
+  .validation-input-username span{
+    color: #dc3545;
+    font-size: 14px;
+    display: inline-block;
+    width: 170px;
+    padding: 6px 8px;
+  }
+
+  .span-validation-input-username{
+    position: absolute;
+    top: 8px;
+    left: 292px;
+    z-index: 10;
+    display: none;
+  }
+
+  .span-validation-input-username:hover + .validation-input-username{
+    display: block;
+  }
+
+  .span-validation-input-username .fa-exclamation-circle{
+    color: #dc3545;
+    font-size: 18px;
+  }
+
+

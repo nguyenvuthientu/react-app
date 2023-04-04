@@ -46,8 +46,8 @@ class RightMenuHomePage extends Component{
                     onMouseOver={this.OnHandleMouseOver}
                     onMouseOut={this.OnHandleMouseOut}
                 >
-                    <i className={loggedIn ? 'fa fa-user' : 'fa fa-sign-in fa-lg'}></i> <a>
-                        {loggedIn ? 'NGUYỄN VŨ THIÊN TÚ' : 'Đăng nhập'}</a>
+                    <i className={loggedIn ? 'fa fa-user' : 'fa fa-sign-in fa-lg'}></i> 
+                    <a>{loggedIn ? 'NGUYỄN VŨ THIÊN TÚ' : 'Đăng nhập'}</a>
                     {loggedIn ? <i className="fa fa-caret-down" aria-hidden="true"></i> : null}
                     {
                         loggedIn ? <div className='user-loggedIn-content' id="user-loggedIn-content">

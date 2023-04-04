@@ -35,16 +35,34 @@ class App extends Component {
 
     OnSubmitFormLogin = (data) => {
         if(data){
-            if(data.username === 'tunvt' && data.password === '12345'){
-                this.setState({
-                    isLoggedIn : true,
-                    isDisplayLoginForm: false
-                });
+            if(data.username === ''){
+                let spanValidationInputUsername = document.getElementById('span-validation-input-username');
+                spanValidationInputUsername.style.display = 'inline-block';
+            }
 
-                localStorage.setItem('isLoggedIn',JSON.stringify({
-                    username: 'tunvt',
-                    isLoggedIn: true
-                }));
+            if(data.password === ''){
+                let spanValidationInputPassword = document.getElementById('span-validation-input-password');
+                spanValidationInputPassword.style.display = 'inline-block';
+            }
+
+            if(data.username !== '' && data.password !== ''){
+                if(data.username === 'tunvt' && data.password === '12345'){
+                    this.setState({
+                        isLoggedIn : true,
+                        isDisplayLoginForm: false
+                    });
+    
+                    localStorage.setItem('isLoggedIn',JSON.stringify({
+                        username: 'tunvt',
+                        isLoggedIn: true
+                    }));
+                }
+                else{
+                    let formLogin = document.querySelector('#form-login');
+                    let textDanger = formLogin.querySelector('.row-text-danger');
+                    textDanger.style.display = 'flex';
+                    textDanger.style.alignItems = 'center';
+                }
             }
         }
     }
