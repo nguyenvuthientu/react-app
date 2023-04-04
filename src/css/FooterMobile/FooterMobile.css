@@ -7,7 +7,13 @@
 .footer-mobile-top{
     display: flex;
     flex-direction: column;
-    overflow:auto;
+    overflow: auto;
+}
+
+.footer-mobile-top .item{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .footer-mobile-top .item .item-head{
