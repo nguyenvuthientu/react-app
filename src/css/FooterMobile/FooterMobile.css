@@ -7,6 +7,7 @@
 .footer-mobile-top{
     display: flex;
     flex-direction: column;
+    overflow:auto;
 }
 
 .footer-mobile-top .item .item-head{
@@ -45,7 +46,7 @@
 .footer-mobile-top .item .toggle-collapsed-content{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.8s ease-out;
 }
 
 .footer-mobile-top .item .toggle-collapsed-content ul{
@@ -82,16 +83,6 @@
     background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
     border-radius: 50%;
     text-align: center;
-}
-
-@keyframes slide-down {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 @media (max-width: 480px) {
