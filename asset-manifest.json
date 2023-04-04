@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-app/static/css/main.11661664.css",
+    "main.css": "/react-app/static/css/main.f4d60916.css",
     "main.js": "/react-app/static/js/main.0790a60e.js",
     "static/js/787.ccf1ca15.chunk.js": "/react-app/static/js/787.ccf1ca15.chunk.js",
     "static/media/BannerHomeCPO.jpg": "/react-app/static/media/BannerHomeCPO.3acf8167f4792bc9dc53.jpg",
@@ -16,12 +16,12 @@
     "static/media/IconCPO2.png": "/react-app/static/media/IconCPO2.4fb0f611ed4067bb1990.png",
     "static/media/IconCPO1.png": "/react-app/static/media/IconCPO1.13a7f9129ec1c59c5a3e.png",
     "index.html": "/react-app/index.html",
-    "main.11661664.css.map": "/react-app/static/css/main.11661664.css.map",
+    "main.f4d60916.css.map": "/react-app/static/css/main.f4d60916.css.map",
     "main.0790a60e.js.map": "/react-app/static/js/main.0790a60e.js.map",
     "787.ccf1ca15.chunk.js.map": "/react-app/static/js/787.ccf1ca15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11661664.css",
+    "static/css/main.f4d60916.css",
     "static/js/main.0790a60e.js"
   ]
 }
