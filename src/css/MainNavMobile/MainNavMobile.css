@@ -70,7 +70,7 @@ a{
     padding-top: 20px;
     display: block;
     max-height: 0;
-    overflow: hidden;
+    overflow-y: scroll;
     transition: max-height 0.8s ease-out;
 }
 
