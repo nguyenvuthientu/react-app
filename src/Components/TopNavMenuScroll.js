@@ -50,6 +50,10 @@ class TopNavMenuScroll extends Component{
         }
     }
 
+    OnHandleGoToFunction = () => {
+        this.props.OnHandleGoToFunction();
+    }
+
     render(){
 
         return(
@@ -57,7 +61,7 @@ class TopNavMenuScroll extends Component{
                 <img src={logo} className="logo"></img>
                 <div className='menu'>
                     <a href=''>VỀ BOSCHARETE</a>
-                    <a href=''>CHỨC NĂNG</a>
+                    <span onClick={this.OnHandleGoToFunction}>CHỨC NĂNG</span>
                     <a href=''>LIÊN HỆ</a>
                 </div>
             </div>

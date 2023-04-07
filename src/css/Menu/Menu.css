@@ -1,0 +1,107 @@
+.menu-function{
+    width: 22%;
+    box-shadow: rgb(221, 221, 221) 0px 0px 6px 3px;
+    margin: 10px;
+}
+
+.menu-function-head{
+    background-color: #ec4c00;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+}
+
+.menu-function-head h4{
+    font-size: 18px;
+    margin: 15px;
+}
+
+.menu_function-content{
+    padding-bottom: 10px;
+}
+
+.menu-function-item{
+    padding: 10px;
+    border-top: 1px dashed #ddd;
+}
+
+.menu-function-item-parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-function-item .menu-function-item-parent div{
+    color: #ec4c00;
+}
+
+.menu-function-item .menu-function-item-parent div i{
+    margin-right: 5px;
+}
+
+.menu-function-item .menu-function-item-parent div span{
+    color: #5d6b82;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-function-item .menu-function-item-parent div span:hover{
+    color: #ff671f;
+}
+
+.menu-function-item .menu-item-toggle-collapsed:hover{
+    cursor: pointer;
+}
+
+.menu-function-item .menu-item-toggle-collapsed .fa-plus{
+    color: #ff671f;
+    font-size: 16px!important;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    transform: rotate(135deg);
+}
+
+.sub-content-menu-function{
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    transition: max-height 0.8s ease-out;
+}
+
+.menu-function-item .menu-item-toggle-collapsed .collapsed{
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+}
+
+.sub-content-menu-function-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.sub-content-menu-function-item i{
+    color: #ff671f;
+    margin-right: 10px;
+}
+
+.sub-content-menu-function-item span{
+    color: #5d6b82; 
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.sub-content-menu-function-item span:hover{
+    cursor: pointer;
+    color: #ff671f;
+}
+
+@media (max-width: 480px) {
+    .menu-function{
+        display: none;
+    }
+  }

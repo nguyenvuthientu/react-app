@@ -1,8 +1,8 @@
-.banner-homepage-area .top-nav-menu-scroll{
+#banner-homepage-area .top-nav-menu-scroll{
     display: none;
 }
 
-.banner-homepage-area .show{
+#banner-homepage-area .show{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,14 +31,27 @@
     font-weight: 700;
 }
 
+.top-nav-menu-scroll .menu span{
+    color: white;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
 .top-nav-menu-scroll .menu a:hover{
     background: white;
     color: #ec4c00;
     line-height: 44.36px;
 }
 
+.top-nav-menu-scroll .menu span:hover{
+    background: white;
+    color: #ec4c00;
+    line-height: 44.36px;
+    cursor: pointer;
+}
+
 @media (max-width: 480px) {
-    .banner-homepage-area .top-nav-menu-scroll{
+    #banner-homepage-area .top-nav-menu-scroll{
         display: none;
     }
   }

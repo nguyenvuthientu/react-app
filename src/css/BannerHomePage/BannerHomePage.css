@@ -5,11 +5,23 @@
     height:100vh;
   }
 
+  .banner-homepage-area-function{
+    background: url("./../../images/banner_claims.jpg") no-repeat center center fixed;
+    background-size: 100% 36%;
+    background-position:top;
+    height:28vh;
+    opacity: 1;
+  }
+
   @media (max-width: 480px) {
-    .banner-homepage-area {
+    #banner-homepage-area {
       background-position: 0 50px;
       background-repeat:no-repeat;
       background-size:contain;
       height:44vh;
+    }
+
+    .banner-homepage-area-function{
+      height:27vh !important;
     }
   }

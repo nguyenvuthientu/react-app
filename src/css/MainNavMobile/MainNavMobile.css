@@ -35,19 +35,80 @@ a{
     margin-left: 5px;
 }
 
-.main-nav-mobile-menu{
-    padding: 0;
-    list-style-type: none;
-}
-
-.main-nav-mobile-menu li{
-    padding: 5px;
-    border-bottom: 1px solid rgba(255,255,255,.15);
-}
-
-.main-nav-mobile-menu li a{
+.main-nav-mobile-menu-item span{
     color: white;
     font-weight: 400;
+}
+
+.main-nav-mobile-menu-item{
+    padding: 10px 0;
+}
+
+.main-nav-mobile-menu-item .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav-mobile-menu-item .head .menu-item-toggle-collapsed-mobile .fa-plus{
+    color: #ec4c00;
+    font-size: 16px!important;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transform: rotate(135deg);
+}
+
+.main-nav-mobile-menu-item .head .menu-item-toggle-collapsed-mobile .collapsed{
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+}
+
+.main-nav-mobile-menu-item .content{
+    padding-top: 20px;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+}
+
+.menu-function-item-parent-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.menu-function-item-parent-mobile div i{
+    color: #ec4c00;
+}
+
+.menu-function-item-parent-mobile div span{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.sub-content-menu-function-mobile{
+    padding-left: 24px;
+    padding-top: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+}
+
+.sub-content-menu-function-item-mobile{
+    padding: 5px 0;
+}
+
+.sub-content-menu-function-item-mobile i{
+    color: #ec4c00;
+}
+
+.sub-content-menu-function-item-mobile span{
+    display: inline-block;
+    margin-left: 5px;
 }
 
 .main-nav-change-password{
@@ -59,6 +120,21 @@ a{
 
 .main-nav-mobile-signin .fa-sign-out{
     margin-left: 3px;
+}
+
+.menu-item-toggle-collapsed .fa-plus{
+    color: #ec4c00;
+    font-size: 16px!important;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transform: rotate(135deg);
+}
+
+.menu-item-toggle-collapsed .collapsed{
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
 }
 
 @media only screen and (min-width: 768px) {

@@ -14,6 +14,8 @@ import Footer from './Components/Footer';
 import FooterMobile from './Components/FooterMobile';
 import Login from './Components/Login';
 import LoginForm from './Components/LoginForm';
+import MenuHomePageText from './Components/MenuHomePageText';
+import Menu from './Components/Menu';
 
 class App extends Component {
 
@@ -21,7 +23,8 @@ class App extends Component {
         super(props);
         this.state = {
             isDisplayLoginForm : false,
-            isLoggedIn : false
+            isLoggedIn : false,
+            isGoToFunctionAfterLogin : false
         };
     }
 
@@ -77,6 +80,21 @@ class App extends Component {
         }
     }
 
+    OnHandleGoToFunction = () => {
+        let loggedInCache = localStorage.getItem('isLoggedIn');
+        if(loggedInCache === null){
+            this.setState({
+                isDisplayLoginForm: true
+            });
+        }
+        else{
+            this.setState({
+                isGoToFunctionAfterLogin : true
+            });
+            window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+        }
+    }
+
     render(){
         let loggedInObj = null;
         let loggedIn = false;
@@ -92,23 +110,25 @@ class App extends Component {
             
             return (
                 <div>
-                    <BannerHomePage>
+                    <BannerHomePage IsGoToFunctionAfterLogin={this.state.isGoToFunctionAfterLogin}>
                         <MenuHomePage>
                             <RightMenuHomePage 
                                 OpenLoginForm={this.OpenLoginForm} 
                                 OnSignOut={this.OnSignOut}
                                 />
                         </MenuHomePage>
+                        <MenuHomePageText OnHandleGoToFunction={this.OnHandleGoToFunction}></MenuHomePageText>                   
                         <MenuHomePageMobile>
                             <RightMenuHomePageMobile />
                         </MenuHomePageMobile>
-                        <TopNavMenuScroll />
+                        <TopNavMenuScroll OnHandleGoToFunction={this.OnHandleGoToFunction} />
                         <MainNavMobile 
                             OpenLoginForm={this.OpenLoginForm}
                             OnSignOut={this.OnSignOut}                       
                         />
-                        <WelcomeText />
+                        <WelcomeText IsGoToFunctionAfterLogin={this.state.isGoToFunctionAfterLogin} />
                     </BannerHomePage>
+                    <Menu IsGoToFunctionAfterLogin={this.state.isGoToFunctionAfterLogin} />
                     <MyService />
                     <Footer />
                     <FooterMobile />

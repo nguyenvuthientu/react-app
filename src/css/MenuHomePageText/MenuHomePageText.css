@@ -1,0 +1,24 @@
+.menu-homepage-text{
+    display: flex;
+    text-align: center;
+    justify-content:flex-end;
+    margin-right: 8px;
+}
+
+.menu-homepage-text span{
+    margin: 0 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.menu-homepage-text span:hover{
+    cursor: pointer;
+    color: #ff671f;
+}
+
+@media (max-width: 480px) {
+    .menu-homepage-text {
+      display: none;
+    }
+  }
