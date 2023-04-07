@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-app/static/css/main.f4af4386.css",
-    "main.js": "/react-app/static/js/main.75fd429c.js",
+    "main.js": "/react-app/static/js/main.854efb0a.js",
     "static/js/787.ccf1ca15.chunk.js": "/react-app/static/js/787.ccf1ca15.chunk.js",
     "static/media/BannerHomeCPO.jpg": "/react-app/static/media/BannerHomeCPO.3acf8167f4792bc9dc53.jpg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/react-app/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -18,11 +18,11 @@
     "static/media/IconCPO1.png": "/react-app/static/media/IconCPO1.13a7f9129ec1c59c5a3e.png",
     "index.html": "/react-app/index.html",
     "main.f4af4386.css.map": "/react-app/static/css/main.f4af4386.css.map",
-    "main.75fd429c.js.map": "/react-app/static/js/main.75fd429c.js.map",
+    "main.854efb0a.js.map": "/react-app/static/js/main.854efb0a.js.map",
     "787.ccf1ca15.chunk.js.map": "/react-app/static/js/787.ccf1ca15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4af4386.css",
-    "static/js/main.75fd429c.js"
+    "static/js/main.854efb0a.js"
   ]
 }
