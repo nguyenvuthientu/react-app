@@ -34,7 +34,6 @@ class MainNavMobile extends Component {
             let content = document.getElementById('main-nav-mobile-content');
             content.style.maxHeight = 'fit-content';
             contentEle.style.maxHeight = contentEle.scrollHeight + "px";
-            //contentEle.style.maxHeight = "1000px";
         } 
     }
 
@@ -74,7 +73,9 @@ class MainNavMobile extends Component {
 
                 <div className='main-nav-mobile-menu'>
                     <div className='main-nav-mobile-menu-item'><span>VỀ BOSCHARETE</span></div>
-                    <div className='main-nav-mobile-menu-item' style={{padding: '0'}}>
+                    {
+                        !loggedIn ? <div className='main-nav-mobile-menu-item'><span>CHỨC NĂNG</span></div>
+                        : <div className='main-nav-mobile-menu-item' style={{padding: '0'}}>
                         <div className='head'>
                             <span>CHỨC NĂNG</span>
                             <div className='menu-item-toggle-collapsed-mobile' 
@@ -248,6 +249,8 @@ class MainNavMobile extends Component {
                             </div>
                         </div>
                     </div>
+                    }
+                    
                     <div className='main-nav-mobile-menu-item' style={{padding: '0'}}><span>LIÊN HỆ</span></div>
                 </div>
 

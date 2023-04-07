@@ -12,6 +12,8 @@ class RightMenuHomePageMobile extends Component{
             let classListMainNavMobile = document.getElementById('main-nav-mobile').classList;
             if(!classListMainNavMobile.contains('main-nav-mobile-show')){
                 classListMainNavMobile.add('main-nav-mobile-show');
+                let welcomeText = document.getElementById('WelcomeText');
+                welcomeText.style.display = 'none';
             }
         }
         else if(classListMenuBar.contains('fa-times')){
@@ -21,6 +23,8 @@ class RightMenuHomePageMobile extends Component{
             let classListMainNavMobile = document.getElementById('main-nav-mobile').classList;
             if(classListMainNavMobile.contains('main-nav-mobile-show')){
                 classListMainNavMobile.remove('main-nav-mobile-show');
+                let welcomeText = document.getElementById('WelcomeText');
+                welcomeText.style.display = 'block';
             }
         }
     }

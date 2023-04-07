@@ -124,7 +124,7 @@ class App extends Component {
                         <TopNavMenuScroll OnHandleGoToFunction={this.OnHandleGoToFunction} />
                         <MainNavMobile 
                             OpenLoginForm={this.OpenLoginForm}
-                            OnSignOut={this.OnSignOut}                       
+                            OnSignOut={this.OnSignOut}                                                 
                         />
                         <WelcomeText IsGoToFunctionAfterLogin={this.state.isGoToFunctionAfterLogin} />
                     </BannerHomePage>
