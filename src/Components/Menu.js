@@ -176,6 +176,31 @@ class Menu extends Component{
                             </div>
                         </div>
                     </div>
+                    <div className='menu-function-item'>
+                        <div className='menu-function-item-parent'>
+                            <div>
+                                <i className="fa fa-folder" aria-hidden="true"></i>
+                                <span>Điều chỉnh thông tin</span>
+                            </div>
+                            <div 
+                                className='menu-item-toggle-collapsed' 
+                                id='menu-item-toggle-collapsed'
+                                onClick={this.ToogleCollapsed}
+                                >
+                                <i className="fa fa-plus collapsed" aria-hidden="true"></i>
+                            </div>
+                        </div>                   
+                        <div className='sub-content-menu-function'>
+                            <div className='sub-content-menu-function-item'>
+                                <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                <span>Điều chỉnh nhận dạng</span>
+                            </div>
+                            <div className='sub-content-menu-function-item'>
+                                <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                <span>Điều chỉnh nguồn lực</span>
+                            </div>                        
+                        </div>
+                    </div>
                 </div>
             </div>
         )

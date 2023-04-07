@@ -186,6 +186,66 @@ class MainNavMobile extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className='menu-function-item-mobile'>
+                                <div className='menu-function-item-parent-mobile'>
+                                    <div>
+                                        <i className="fa fa-cog" aria-hidden="true"></i>
+                                        <span>Quản trị hệ thống Admin</span>
+                                    </div>
+                                    <div className='menu-item-toggle-collapsed' 
+                                        id='menu-item-toggle-collapsed' onClick={this.ToogleCollapsed}>
+                                        <i className="fa fa-plus collapsed" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div className='sub-content-menu-function-mobile'>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Danh mục hệ thống</span>
+                                    </div>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Người dùng</span>
+                                    </div>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Nhóm người dùng</span>
+                                    </div>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Setting</span>
+                                    </div>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Quản lý job và đồng bộ</span>
+                                    </div>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Tracking log</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='menu-function-item-mobile'>
+                                <div className='menu-function-item-parent-mobile'>
+                                    <div>
+                                        <i className="fa fa-folder" aria-hidden="true"></i>
+                                        <span>Điều chỉnh thông tin</span>
+                                    </div>
+                                    <div className='menu-item-toggle-collapsed' 
+                                        id='menu-item-toggle-collapsed' onClick={this.ToogleCollapsed}>
+                                        <i className="fa fa-plus collapsed" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div className='sub-content-menu-function-mobile'>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Điều chỉnh nhận dạng</span>
+                                    </div>
+                                    <div className='sub-content-menu-function-item-mobile'>
+                                        <i className="fa fa-caret-right" aria-hidden="true"></i>
+                                        <span>Điều chỉnh nguồn lực</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className='main-nav-mobile-menu-item' style={{padding: '0'}}><span>LIÊN HỆ</span></div>
